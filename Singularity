@@ -1,5 +1,5 @@
-Bootstrap: docker
-From: shub://mcw-rcc/rstudio:1.1.456
+Bootstrap: shub
+From: mcw-rcc/rstudio:1.1.456
 
 %labels
 Maintainer Matthew Flister
