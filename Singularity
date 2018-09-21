@@ -46,7 +46,9 @@ This container runs Tensorflow-GPU 1.10 for R.
         python-dev \
         python3-dev \
         python-setuptools \
-        python3-setuptools
+        python3-setuptools \
+        python-virtualenv \
+        python3-virtualenv
     apt-get clean
 
     # Update pip
