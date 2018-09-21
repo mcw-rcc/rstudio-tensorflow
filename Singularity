@@ -68,6 +68,6 @@ This container runs Tensorflow-GPU 1.10 for R.
     pip3 install --no-binary --upgrade keras tflearn numpy nibabel h5py scikit-learn pandas scipy matplotlib ipykernel jupyter jupyterlab pydicom opencv-python tables
 
     # Install rstudio/tensorflow
-    R -e 'install.packages("devtools", repos="https://cran.rstudio.com"); devtools::install_github("rstudio/tensorflow"); library(tensorflow); install_tensorflow()'
+    R -e 'install.packages("devtools", repos="https://cran.rstudio.com"); options(unzip = "internal"); devtools::install_github("rstudio/tensorflow"); library(tensorflow); install_tensorflow()'
 %test
     R -e 'sess = tf$Session(); hello <- tf$constant('Hello, TensorFlow!'); sess$run(hello)'
