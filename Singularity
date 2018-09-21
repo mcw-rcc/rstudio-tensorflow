@@ -47,8 +47,6 @@ This container runs Tensorflow-GPU 1.10 for R.
         python3-dev \
         python-setuptools \
         python3-setuptools \
-        python-virtualenv \
-        python3-virtualenv
     apt-get clean
 
     # Update pip
@@ -60,14 +58,14 @@ This container runs Tensorflow-GPU 1.10 for R.
     pip install --no-cache-dir --ignore-installed --upgrade $TF_BINARY_URL
 
     # Install python packages
-    pip install --no-binary --upgrade keras tflearn numpy nibabel h5py scikit-learn pandas scipy matplotlib ipykernel jupyter jupyterlab pydicom opencv-python tables
+    pip install --no-binary --upgrade keras tflearn numpy nibabel h5py scikit-learn pandas scipy matplotlib ipykernel jupyter jupyterlab pydicom opencv-python tables virtualenv
 
     # Install TensorFlow-GPU
     export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.10.0-cp35-cp35m-linux_x86_64.whl
     pip3 install --no-cache-dir --ignore-installed --upgrade $TF_BINARY_URL
 
     # Install python packages
-    pip3 install --no-binary --upgrade keras tflearn numpy nibabel h5py scikit-learn pandas scipy matplotlib ipykernel jupyter jupyterlab pydicom opencv-python tables
+    pip3 install --no-binary --upgrade keras tflearn numpy nibabel h5py scikit-learn pandas scipy matplotlib ipykernel jupyter jupyterlab pydicom opencv-python tables virtualenv
 
     # Install rstudio/tensorflow
     R -e 'install.packages("devtools", repos="https://cran.rstudio.com"); options(unzip = "internal"); devtools::install_github("rstudio/tensorflow"); library(tensorflow); install_tensorflow()'
