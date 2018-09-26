@@ -3,7 +3,7 @@ From: mcw-rcc/rstudio:1.1.456
 
 %labels
 Maintainer Matthew Flister
-Version 09.20.18
+Version 09.26.18
 
 %help
 This container runs Tensorflow-GPU 1.10 for R.
