@@ -70,5 +70,3 @@ This container runs Tensorflow-GPU 1.10 for R.
 
     # Install rstudio/tensorflow
     R -e 'install.packages("devtools", repos="https://cran.rstudio.com"); options(unzip = "internal"); devtools::install_github("rstudio/tensorflow"); library(tensorflow); install_tensorflow()'
-%test
-    R -e 'sess = tf$Session(); hello <- tf$constant('Hello, TensorFlow!'); sess$run(hello)'
